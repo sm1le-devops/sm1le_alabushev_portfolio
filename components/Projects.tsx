@@ -27,7 +27,7 @@ export default function Projects() {
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300">
-            Mason Project
+            TaskPulse Project
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
@@ -52,7 +52,7 @@ export default function Projects() {
           </div>
 
           <div className="pt-4 relative z-10">
-            <a href="https://mason-qm1s.onrender.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-white text-black font-semibold px-6 py-3.5 rounded-xl hover:bg-gray-200 transition">
+            <a href="https://taskpulse-f5zy.onrender.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-white text-black font-semibold px-6 py-3.5 rounded-xl hover:bg-gray-200 transition">
               <span>Live Preview</span>
               <ExternalLink size={16} />
             </a>
@@ -61,7 +61,7 @@ export default function Projects() {
 
         <div className="w-full lg:w-[45%] h-64 sm:h-80 lg:h-96 rounded-2xl bg-gradient-to-tr from-purple-900/30 to-blue-900/30 border border-white/5 flex flex-col justify-center items-center p-6 text-center">
           <Layers className="text-blue-400/60 mb-4" size={48} />
-          <h4 className="text-lg font-bold">mason-qm1s.onrender.com</h4>
+          <h4 className="text-lg font-bold">taskpulse-f5zy.onrender.com</h4>
         </div>
       </div>
 
