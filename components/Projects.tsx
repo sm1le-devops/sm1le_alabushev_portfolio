@@ -23,7 +23,7 @@ export default function Projects() {
             <div className="p-2.5 bg-purple-500/10 border border-purple-500/20 text-purple-400 rounded-xl">
               <Terminal size={22} />
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Fullstack Development</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Production-oriented Task Management Backend</span>
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300">
@@ -31,7 +31,10 @@ export default function Projects() {
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            A full-featured web application designed to demonstrate the integration of server-side logic and a dynamic interface. Focus was placed on rapid prototyping and clean UI implementation.
+            Built JWT authentication with HttpOnly cookies, refresh-token rotation, CSRF protection and role-based authorization.
+• Implemented Redis caching and IP-based rate limiting, with cache invalidation on task mutations.
+• Built Celery background processing and tested API behavior, security, data isolation and N+1 query performance.
+• Achieved 89% test coverage across 32 tests and added local performance benchmarks with P95 latency tracking.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
