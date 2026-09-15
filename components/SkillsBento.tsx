@@ -49,7 +49,18 @@ export default function SkillsBento() {
     {
       name: 'Python',
       color: 'text-[#FFD43B] border-[#FFD43B]/10 hover:border-[#FFD43B]/40 hover:bg-[#FFD43B]/10 hover:shadow-[0_0_15px_rgba(255,212,59,0.2)]',
-      icon: <svg viewBox="0 0 24 24" className="w-3.5 h-3.5"><path fill="#3776AB" d="M12 2.4c-4.9 0-5 .2-5 2.3v2h5v1H6.7c-2 0-3.3.9-3.3 2.9v2.2c0 2.2 1.1 3 3.1 3H8v-1.7c0-2 1.8-3.5 3.8-3.5h2.8V8.1c0-1.8-1.4-2.8-3.2-2.8-1.1 0-2.3-.1-2.3-.1v1.1c0 .2-.2.4-.4.4H8c-.2 0-.4-.2-.4-.4V5.1c0-.9 1-1.3 4-1.3s4.6.4 4.6 1.4v.8h1.2v-.8c0-1.9-1.2-2.8-5.4-2.8zm-1.8 1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z" /><path fill="#FFD43B" d="M12 21.6c4.9 0 5-.2 5-2.3v-2h-5v-1h5.3c2 0 3.3-.9 3.3-2.9v-2.2c0-2.2-1.1-3-3.1-3H16v1.7c0 2-1.8 3.5-3.8 3.5H9.4v2.5c0 1.8 1.4 2.8 3.2 2.8 1.1 0 2.3.1 2.3.1v-1.1c0 .2-.2.4-.4.4h-.8c-.2 0-.4-.2-.4.4v2.2c0 .9-1 1.3-4 1.3s-4.6-.4-4.6-1.4v-.8H6.7v.8c0 1.9 1.2 2.8 5.4 2.8zm1.8-1.9c.4 0 .8-.3.8-.7s.4-.7.8-.7-.8-.3-.8-.7-.8-.7-.8-.7z" /></svg>
+      icon: (
+        <svg viewBox="0 0 24 24" className="w-3.5 h-3.5">
+          <path
+            fill="#3776AB"
+            d="M12 2.4c-4.9 0-5 .2-5 2.3v2h5v1H6.7c-2 0-3.3.9-3.3 2.9v2.2c0 2.2 1.1 3 3.1 3H8v-1.7c0-2 1.8-3.5 3.8-3.5h2.8V8.1c0-1.8-1.4-2.8-3.2-2.8-1.1 0-2.3-.1-2.3-.1v1.1c0 .2-.2.4-.4.4H8c-.2 0-.4-.2-.4-.4V5.1c0-.9 1-1.3 4-1.3s4.6.4 4.6 1.4v.8h1.2v-.8c0-1.9-1.2-2.8-5.4-2.8zm-1.8 1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z"
+          />
+          <path
+            fill="#FFD43B"
+            d="M12 21.6c4.9 0 5-.2 5-2.3v-2h-5v-1h5.3c2 0 3.3-.9 3.3-2.9v-2.2c0-2.2-1.1-3-3.1-3H16v1.7c0 2-1.8 3.5-3.8 3.5H9.4v2.5c0 1.8 1.4 2.8 3.2 2.8 1.1 0 2.3.1 2.3.1v-1.1c0-.2-.2-.4-.4-.4h-.8c-.2 0-.4-.2-.4-.4v2.2c0 .9 1 1.3 4 1.3s4.6-.4 4.6-1.4v-.8h1.2v.8c0 1.9-1.2 2.8-5.4 2.8zm1.8-1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z"
+          />
+        </svg>
+      )
     },
     {
       name: 'PostgreSQL',
@@ -102,7 +113,6 @@ export default function SkillsBento() {
     {
       name: 'English',
       level: 'B1',
-      status: 'improving',
       color: 'hover:border-blue-500/40 hover:bg-blue-500/5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] text-blue-400',
       flag: (
         <svg viewBox="0 0 50 30" className="w-full h-full object-cover">
@@ -117,7 +127,6 @@ export default function SkillsBento() {
     {
       name: 'Czech',
       level: 'A2',
-      status: 'conversational',
       color: 'hover:border-cyan-500/40 hover:bg-cyan-500/5 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] text-cyan-400',
       flag: (
         <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
@@ -130,7 +139,6 @@ export default function SkillsBento() {
     {
       name: 'Russian',
       level: 'Native',
-      status: 'bilingual',
       color: 'hover:border-red-500/40 hover:bg-red-500/5 hover:shadow-[0_0_15px_rgba(239,68,68,0.2)] text-red-400',
       flag: (
         <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
@@ -143,7 +151,6 @@ export default function SkillsBento() {
     {
       name: 'Ukrainian',
       level: 'Native',
-      status: 'bilingual',
       color: 'hover:border-yellow-500/40 hover:bg-yellow-500/5 hover:shadow-[0_0_15px_rgba(234,179,8,0.2)] text-yellow-400',
       flag: (
         <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
@@ -179,22 +186,22 @@ export default function SkillsBento() {
             </h3>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {languages.map((lang) => (
               <div
                 key={lang.name}
-                className={`flex items-center gap-3 p-3 rounded-xl border border-white/5 bg-white/[0.02] transition-all duration-300 ${lang.color}`}
+                className={`flex items-center gap-2 px-2.5 py-2 rounded-xl border border-white/5 bg-white/[0.02] transition-all duration-300 ${lang.color}`}
               >
-                <div className="shrink-0 w-[48px] h-[32px] overflow-hidden rounded-md">
+                <div className="shrink-0 w-8 h-[21px] overflow-hidden rounded-md border border-white/10 shadow-sm">
                   {lang.flag}
                 </div>
 
-                <div>
-                  <div className="font-medium text-white">
+                <div className="min-w-0">
+                  <div className="font-medium text-white text-xs truncate">
                     {lang.name}
                   </div>
 
-                  <div className="text-sm text-gray-400">
+                  <div className="text-[11px] text-gray-400">
                     {lang.level}
                   </div>
                 </div>
