@@ -165,7 +165,7 @@ export default function SkillsBento() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[minmax(180px,auto)] isolate">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-auto items-start isolate">
 
         {/* Languages */}
         <div className="md:col-span-2 bg-black/60 border border-white/10 rounded-[32px] p-6 backdrop-blur-2xl hover:-translate-y-1 hover:border-cyan-500/30 hover:shadow-[0_0_50px_rgba(34,211,238,0.12)] transition-all duration-500">
@@ -185,7 +185,7 @@ export default function SkillsBento() {
                 key={lang.name}
                 className={`flex items-center gap-3 p-3 rounded-xl border border-white/5 bg-white/[0.02] transition-all duration-300 ${lang.color}`}
               >
-                <div className="shrink-0">
+                <div className="shrink-0 w-20 h-12 overflow-hidden rounded-md">
                   {lang.flag}
                 </div>
 
