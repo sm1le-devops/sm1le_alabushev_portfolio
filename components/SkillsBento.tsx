@@ -105,10 +105,7 @@ export default function SkillsBento() {
       status: 'improving',
       color: 'hover:border-blue-500/40 hover:bg-blue-500/5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] text-blue-400',
       flag: (
-        <svg
-          viewBox="0 0 50 30"
-          className="w-9 h-6 object-cover rounded-sm"
-        >
+        <svg viewBox="0 0 50 30" className="w-full h-full object-cover">
           <rect width="50" height="30" fill="#012169" />
           <path d="M0,0 L50,30 M50,0 L0,30" stroke="#fff" strokeWidth="6" />
           <path d="M0,0 L50,30 M50,0 L0,30" stroke="#C8102E" strokeWidth="4" />
@@ -123,10 +120,7 @@ export default function SkillsBento() {
       status: 'conversational',
       color: 'hover:border-cyan-500/40 hover:bg-cyan-500/5 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] text-cyan-400',
       flag: (
-        <svg
-          viewBox="0 0 30 20"
-          className="w-9 h-6 object-cover rounded-sm"
-        >
+        <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
           <rect width="30" height="20" fill="#fff" />
           <rect width="30" height="10" y="10" fill="#D7141A" />
           <polygon points="0,0 0,20 15,10" fill="#11457E" />
@@ -139,10 +133,7 @@ export default function SkillsBento() {
       status: 'bilingual',
       color: 'hover:border-red-500/40 hover:bg-red-500/5 hover:shadow-[0_0_15px_rgba(239,68,68,0.2)] text-red-400',
       flag: (
-        <svg
-          viewBox="0 0 30 20"
-          className="w-9 h-6 object-cover rounded-sm"
-        >
+        <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
           <rect width="30" height="20" fill="#fff" />
           <rect width="30" height="13.33" y="6.67" fill="#0039A6" />
           <rect width="30" height="6.67" y="13.33" fill="#D52B1E" />
@@ -155,10 +146,7 @@ export default function SkillsBento() {
       status: 'bilingual',
       color: 'hover:border-yellow-500/40 hover:bg-yellow-500/5 hover:shadow-[0_0_15px_rgba(234,179,8,0.2)] text-yellow-400',
       flag: (
-        <svg
-          viewBox="0 0 30 20"
-          className="w-9 h-6 object-cover rounded-sm"
-        >
+        <svg viewBox="0 0 30 20" className="w-full h-full object-cover">
           <rect width="30" height="10" fill="#4B92DB" />
           <rect width="30" height="10" y="10" fill="#FFD700" />
         </svg>
