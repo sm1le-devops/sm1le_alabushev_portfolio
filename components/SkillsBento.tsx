@@ -1,6 +1,6 @@
 'use client';
 
-import { Users, Code2, Database, Layout, Terminal, Zap, Languages, ArrowUpRight } from 'lucide-react';
+import { Users, Database, Layout, Zap, Languages } from 'lucide-react';
 
 export default function SkillsBento() {
 
@@ -36,7 +36,7 @@ export default function SkillsBento() {
     {
       name: 'Tailwind CSS',
       color: 'text-[#38BDF8] border-[#38BDF8]/10 hover:border-[#38BDF8]/40 hover:bg-[#38BDF8]/10 hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]',
-      icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6C13.7 10.6 15 12 18 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6C16.3 6.2 15 4.8 12 4.8zM6 12c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.2 1.2 2.5 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6C10.3 13.4 9 12 6 12z" /></svg>
+      icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6C13.7 10.6 15 12 18 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9.2-1.6.9-2.3-1.6C16.3 6.2 15 4.8 12 4.8zM6 12c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.2 1.2 2.5 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6C10.3 13.4 9 12 6 12z" /></svg>
     }
   ];
 
@@ -49,7 +49,7 @@ export default function SkillsBento() {
     {
       name: 'Python',
       color: 'text-[#FFD43B] border-[#FFD43B]/10 hover:border-[#FFD43B]/40 hover:bg-[#FFD43B]/10 hover:shadow-[0_0_15px_rgba(255,212,59,0.2)]',
-      icon: <svg viewBox="0 0 24 24" className="w-3.5 h-3.5"><path fill="#3776AB" d="M12 2.4c-4.9 0-5 .2-5 2.3v2h5v1H6.7c-2 0-3.3.9-3.3 2.9v2.2c0 2.2 1.1 3 3.1 3H8v-1.7c0-2 1.8-3.5 3.8-3.5h2.8V8.1c0-1.8-1.4-2.8-3.2-2.8-1.1 0-2.3-.1-2.3-.1v1.1c0 .2-.2.4-.4.4H8c-.2 0-.4-.2-.4-.4V5.1c0-.9 1-1.3 4-1.3s4.6.4 4.6 1.4v.8h1.2v-.8c0-1.9-1.2-2.8-5.4-2.8zm-1.8 1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z" /><path fill="#FFD43B" d="M12 21.6c4.9 0 5-.2 5-2.3v-2h-5v-1h5.3c2 0 3.3-.9 3.3-2.9v-2.2c0-2.2-1.1-3-3.1-3H16v1.7c0 2-1.8 3.5-3.8 3.5H9.4v2.5c0 1.8 1.4 2.8 3.2 2.8 1.1 0 2.3.1 2.3.1v-1.1c0-.2.2-.4.4-.4h.8c.2 0 .4.2.4.4v2.2c0 .9-1 1.3-4 1.3s-4.6-.4-4.6-1.4v-.8H6.7v.8c0 1.9 1.2 2.8 5.4 2.8zm1.8-1.9c.4 0 .8-.3.8-.7s-.4-.7-.8-.7-.8.3-.8.7.4.7.8.7z" /></svg>
+      icon: <svg viewBox="0 0 24 24" className="w-3.5 h-3.5"><path fill="#3776AB" d="M12 2.4c-4.9 0-5 .2-5 2.3v2h5v1H6.7c-2 0-3.3.9-3.3 2.9v2.2c0 2.2 1.1 3 3.1 3H8v-1.7c0-2 1.8-3.5 3.8-3.5h2.8V8.1c0-1.8-1.4-2.8-3.2-2.8-1.1 0-2.3-.1-2.3-.1v1.1c0 .2-.2.4-.4.4H8c-.2 0-.4-.2-.4-.4V5.1c0-.9 1-1.3 4-1.3s4.6.4 4.6 1.4v.8h1.2v-.8c0-1.9-1.2-2.8-5.4-2.8zm-1.8 1.9c-.4 0-.8.3-.8.7s.4.7.8.7.8-.3.8-.7-.4-.7-.8-.7z" /><path fill="#FFD43B" d="M12 21.6c4.9 0 5-.2 5-2.3v-2h-5v-1h5.3c2 0 3.3-.9 3.3-2.9v-2.2c0-2.2-1.1-3-3.1-3H16v1.7c0 2-1.8 3.5-3.8 3.5H9.4v2.5c0 1.8 1.4 2.8 3.2 2.8 1.1 0 2.3.1 2.3.1v-1.1c0 .2-.2.4-.4.4h-.8c-.2 0-.4-.2-.4.4v2.2c0 .9-1 1.3-4 1.3s-4.6-.4-4.6-1.4v-.8H6.7v.8c0 1.9 1.2 2.8 5.4 2.8zm1.8-1.9c.4 0 .8-.3.8-.7s-.4-.7-.8-.7-.8.3-.8.7.4.7.8.7z" /></svg>
     },
     {
       name: 'PostgreSQL',
@@ -64,7 +64,7 @@ export default function SkillsBento() {
     {
       name: 'Git',
       color: 'text-[#F05032] border-[#F05032]/10 hover:border-[#F05032]/40 hover:bg-[#F05032]/10 hover:shadow-[0_0_15px_rgba(240,80,50,0.2)]',
-      icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M23.5 11L13 .5c-.6-.6-1.5-.6-2.1 0l-1.9 1.9 2.5 2.5c.5-.2 1.2-.1 1.6.3.5.5.5 1.2.1 1.7L15 8.6c.5-.1 1.2 0 1.6.4.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-.4-.4-.5-1-.3-1.5l-1.9-1.9v4.2c.2.1.4.3.5.6.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-.6-.6-.6-1.6 0-2.1.2-.2.4-.4.6-.5V6.7c-.2-.1-.4-.3-.5-.6-.3-.6-.2-1.4.3-1.9.6-.6 1.6-.6 2.1 0L3.1 9.4c-.6.6-.6 1.5 0 2.1l10.5 10.5c.6.6 1.5.6 2.1 0l7.9-7.9c.5-.6.5-1.5-.1-2.1z" /></svg>
+      icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M23.5 11L13 .5c-.6-.6-1.5-.6-2.1 0l-1.9 1.9 2.5 2.5c.5-.2 1.2-.1 1.6.3.5.5.5 1.2.1 1.7L15 8.6c.5-.1 1.2 0 1.6.4.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-.4-.4-.5-1-.3-1.5l-1.9-1.9v4.2c.2.1.4.3.5.6.6.6.6 1.6 0 2.1-.6.6-1.6.6-2.1 0-0.6-.6-.6-1.6 0-2.1.2-.2.4-.4.6-.5V6.7c-.2-.1-.4-.3-.5-.6-.3-.6-.2-1.4.3-1.9.6-.6 1.6-.6 2.1 0L3.1 9.4c-.6.6-.6 1.5 0 2.1l10.5 10.5c.6.6 1.5.6 2.1 0l7.9-7.9c.5-.6.5-1.5-.1-2.1z" /></svg>
     },
     {
       name: 'CI/CD',
@@ -135,64 +135,44 @@ export default function SkillsBento() {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3 text-white">
           Technical Arsenal
         </h2>
-        <p className="text-gray-300 drop-shadow-md max-w-xl text-base">Tools and technologies I use to design systems.</p>
+        <p className="text-gray-300 drop-shadow-md max-w-xl text-base">
+          Tools and technologies I use to design systems.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[minmax(180px,auto)] isolate">
 
-        {/* 1. CARD: ABOUT ME */}
-        <div className="md:col-span-8 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[32px] p-8 backdrop-blur-3xl hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(168,85,247,0.3)] transition-all duration-500 flex flex-col justify-center cursor-default">
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-          <div className="relative z-10 flex items-center gap-6">
-            <div className="w-16 h-16 bg-purple-500/10 border border-purple-500/20 rounded-2xl flex items-center justify-center text-purple-400">
-              <Code2 size={32} />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold tracking-tight text-white">sm1le // Vladislav</h3>
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-3xl mt-1">
-                Software Engineering student at KAI focused on building high-performance backend systems. Specializing in Python and relational database design, with experience across the full development lifecycle — from API optimization to data integrity and secure, scalable solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* CARD 5: LANGUAGES */}
-        <div className="md:col-span-3 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[32px] p-5 backdrop-blur-md hover:-translate-y-2  transition-all duration-500 flex flex-col justify-center cursor-default">
+        {/* CARD: LANGUAGES */}
+        <div className="md:col-span-2 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[32px] p-5 backdrop-blur-md hover:-translate-y-2 transition-all duration-500 flex flex-col justify-center cursor-default">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
           <div className="relative z-10 flex items-center gap-3 mb-2">
             <div className="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 group-hover:bg-cyan-500/20 transition-all duration-300">
               <Languages size={18} className="text-cyan-400 group-hover:text-cyan-300" />
             </div>
-            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-cyan-400 transition-colors">Languages</span>
+            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-cyan-400 transition-colors">
+              Languages
+            </span>
           </div>
 
           <div className="relative z-10 flex flex-col gap-1.5 w-full">
-            {languages.map(lang => (
-              <div
-                key={lang.name}
-                className={`flex items-center justify-between px-3 py-1 rounded-xl border border-white/5 bg-white/[0.02] transition-all duration-300 cursor-pointer ${lang.color}`}
-              >
-                <div className="flex items-center gap-2.5">
-                  <div className="w-5 h-5 rounded-full overflow-hidden shrink-0 border border-white/10 flex items-center justify-center shadow-md">
-                    {lang.flag}
-                  </div>
-                  <span className="text-xs font-bold text-gray-200 group-hover:text-white transition-colors">{lang.name}</span>
+            {languages.map((lang) => (
+              <div key={lang.name} className="flex items-center justify-between gap-2">
+                <div>
+                  <div className="font-medium">{lang.name}</div>
+                  <div className="text-sm text-gray-400">{lang.level}</div>
                 </div>
 
-                <div className="flex items-center gap-1.5">
-                  <span className="text-[10px] font-mono font-black px-1.5 py-0.5 rounded bg-white/5 border border-white/10 uppercase tracking-wide">
-                    {lang.level}
-                  </span>
-                </div>
+                <span className="text-[9px] px-2 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400">
+                  {lang.status}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
-
         {/* CARD: FRONTEND */}
-        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(239,68,68,0.3)] transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
+        <div className="md:col-span-3 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(239,68,68,0.3)] transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
 
           <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
@@ -200,12 +180,17 @@ export default function SkillsBento() {
             <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/20 group-hover:bg-red-500/20 transition-all duration-300">
               <Layout size={20} className="text-red-400 group-hover:text-red-300" />
             </div>
-            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-red-300 transition-colors">Frontend</span>
+            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-red-300 transition-colors">
+              Frontend
+            </span>
           </div>
 
           <div className="relative z-10 flex flex-wrap gap-2 mt-3">
             {frontendSkills.map(skill => (
-              <div key={skill.name} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-transparent bg-white/5 transition-all duration-300 cursor-pointer ${skill.color}`}>
+              <div
+                key={skill.name}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-transparent bg-white/5 transition-all duration-300 cursor-pointer ${skill.color}`}
+              >
                 {skill.icon}
                 <span className="text-xs font-semibold">{skill.name}</span>
               </div>
@@ -213,20 +198,25 @@ export default function SkillsBento() {
           </div>
         </div>
 
-        {/* CARD 4: BACKEND */}
-        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2  transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
+        {/* CARD: BACKEND */}
+        <div className="md:col-span-4 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[24px] p-6 backdrop-blur-md hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between cursor-default min-h-[180px]">
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
           <div className="relative z-10 flex items-center gap-3">
             <div className="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-all duration-300">
               <Database size={20} className="text-emerald-400 group-hover:text-emerald-300" />
             </div>
-            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-emerald-400 transition-colors">Backend & Infrastructure</span>
+            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-emerald-400 transition-colors">
+              Backend & Infrastructure
+            </span>
           </div>
 
           <div className="relative z-10 flex flex-wrap gap-2 mt-3">
             {backendSkills.map(skill => (
-              <div key={skill.name} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-transparent bg-white/5 transition-all duration-300 cursor-pointer ${skill.color}`}>
+              <div
+                key={skill.name}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-transparent bg-white/5 transition-all duration-300 cursor-pointer ${skill.color}`}
+              >
                 {skill.icon}
                 <span className="text-xs font-semibold">{skill.name}</span>
               </div>
@@ -234,7 +224,7 @@ export default function SkillsBento() {
           </div>
         </div>
 
-        {/* CARD: SOFT SKILLS (Подогнан под размер Languages) */}
+        {/* CARD: SOFT SKILLS */}
         <div className="md:col-span-3 group relative overflow-hidden bg-black/75 border border-white/10 rounded-[32px] p-5 backdrop-blur-md hover:-translate-y-2 transition-all duration-500 flex flex-col justify-center cursor-default">
           <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
@@ -242,7 +232,9 @@ export default function SkillsBento() {
             <div className="p-2 rounded-lg bg-amber-500/10 border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
               <Users size={18} className="text-amber-400 group-hover:text-amber-300" />
             </div>
-            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-amber-400 transition-colors">Soft Skills</span>
+            <span className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-amber-400 transition-colors">
+              Soft Skills
+            </span>
           </div>
 
           <div className="relative z-10 flex flex-col gap-2 w-full">
@@ -267,9 +259,6 @@ export default function SkillsBento() {
             ))}
           </div>
         </div>
-
-
-
 
       </div>
     </section>

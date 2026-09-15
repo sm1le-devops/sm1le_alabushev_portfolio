@@ -7,7 +7,16 @@ export default function Experience() {
     <section id="experience" className="py-20 max-w-7xl mx-auto px-6 w-full text-white z-10 relative scroll-mt-20">
 
       <div className="mb-12 text-center lg:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h2
+          className="
+    text-3xl sm:text-4xl
+    font-bold
+    tracking-tight
+    text-white
+    drop-shadow-[0_3px_10px_rgba(0,0,0,0.75)]
+    [text-shadow:0_0_22px_rgba(34,211,238,0.18),0_3px_10px_rgba(0,0,0,0.75)]
+  "
+        >
           Work Experience
         </h2>
       </div>
@@ -31,11 +40,11 @@ export default function Experience() {
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-500 transition-all duration-300">
-            Full-stack Web Developer
+            Backend & Full-stack Developer
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            Successfully managed freelance operations by building scalable digital products through robust Python-driven backends and complex relational database architectures. I specialize in designing sophisticated user schemas and data-handling systems, bridging the gap between powerful server-side logic and intuitive frontends. By leveraging optimized Python algorithms, I deliver secure, high-performance solutions—ranging from automated fitness platforms to high-efficiency Telegram bots.
+            I build web applications with Python-driven backends and relational databases, combining API development, data modeling and frontend integration. My projects include production-oriented FastAPI systems with PostgreSQL, Redis and Celery, as well as payment integrations, authentication, background processing and automated testing.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
