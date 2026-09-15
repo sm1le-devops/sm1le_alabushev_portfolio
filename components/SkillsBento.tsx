@@ -181,7 +181,7 @@ export default function SkillsBento() {
               <Languages size={20} />
             </div>
 
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="font-bold uppercase text-[10px] tracking-[0.15em] text-gray-400 group-hover:text-cyan-300 transition-colors">
               Languages
             </h3>
           </div>
