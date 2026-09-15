@@ -1,57 +1,214 @@
 'use client';
 
-import { Terminal, ExternalLink, ShieldCheck, Cpu, Layers } from 'lucide-react';
+import {
+  Terminal,
+  ExternalLink,
+  ShieldCheck,
+  Cpu,
+  Layers,
+  Database,
+  TestTube2,
+} from 'lucide-react';
 
 export default function Projects() {
   return (
     <section id="projects" className="py-20 max-w-7xl mx-auto px-6 w-full text-white z-10 relative scroll-mt-20">
-      
+
       <div className="mb-12 text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Completed Projects
         </h2>
       </div>
 
-      {/* Mason Project Card */}
+      {/* TaskPulse Project Card */}
       <div className="bg-black/60 border border-white/10 rounded-[32px] p-8 md:p-12 flex flex-col lg:flex-row gap-8 items-center backdrop-blur-2xl hover:-translate-y-2 hover:border-purple-500/30 hover:shadow-[0_0_80px_rgba(168,85,247,0.3)] transition-all duration-500 group relative overflow-hidden cursor-default">
-        
+
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-transparent to-blue-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none" />
+
         <div className="absolute -left-20 -top-20 w-60 h-60 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-blue-500/20 transition-all duration-500" />
 
         <div className="flex-1 space-y-6 relative z-10">
+
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-purple-500/10 border border-purple-500/20 text-purple-400 rounded-xl">
               <Terminal size={22} />
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Production-oriented Task Management Backend</span>
+
+            <span className="text-xs font-bold uppercase tracking-widest text-purple-400">
+              Production-oriented Backend
+            </span>
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300">
-            TaskPulse Project
+            TaskPulse
           </h3>
 
+          {/* UPDATED TASKPULSE DESCRIPTION */}
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            Built JWT authentication with HttpOnly cookies, refresh-token rotation, CSRF protection and role-based authorization.
-• Implemented Redis caching and IP-based rate limiting, with cache invalidation on task mutations.
-• Built Celery background processing and tested API behavior, security, data isolation and N+1 query performance.
-• Achieved 89% test coverage across 32 tests and added local performance benchmarks with P95 latency tracking.
+            Production-oriented task management backend built with FastAPI,
+            PostgreSQL, Redis and Celery. Implemented JWT authentication with
+            HttpOnly cookies, refresh-token rotation, CSRF, RBAC, IDOR
+            protection, rate limiting, caching and idempotent background jobs.
+            Added N+1 query protection, automated testing and CI/CD with
+            production Alembic migrations.
           </p>
 
+          {/* UPDATED TASKPULSE FEATURES */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+
             <div className="flex items-start space-x-3">
-              <ShieldCheck className="text-emerald-400 mt-0.5 shrink-0" size={18} />
-              <p className="text-sm text-gray-300">Robust MySQL database for secure data storage</p>
+              <ShieldCheck
+                className="text-emerald-400 mt-0.5 shrink-0"
+                size={18}
+              />
+
+              <p className="text-sm text-gray-300">
+                JWT, HttpOnly cookies, CSRF, RBAC & IDOR protection
+              </p>
             </div>
+
             <div className="flex items-start space-x-3">
-              <Cpu className="text-blue-400 mt-0.5 shrink-0" size={18} />
-              <p className="text-sm text-gray-300">Python backend with high-performance API handling</p>
+              <Database
+                className="text-blue-400 mt-0.5 shrink-0"
+                size={18}
+              />
+
+              <p className="text-sm text-gray-300">
+                PostgreSQL + Redis caching, rate limiting & idempotency
+              </p>
             </div>
+
+            <div className="flex items-start space-x-3">
+              <Cpu
+                className="text-purple-400 mt-0.5 shrink-0"
+                size={18}
+              />
+
+              <p className="text-sm text-gray-300">
+                Celery background processing & asynchronous reports
+              </p>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <TestTube2
+                className="text-orange-400 mt-0.5 shrink-0"
+                size={18}
+              />
+
+              <p className="text-sm text-gray-300">
+                62 tests · 87.03% coverage · N+1 regression protection
+              </p>
+            </div>
+
           </div>
 
+          {/* UPDATED TASKPULSE METRICS */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+              <div className="text-2xl font-bold text-white">
+                62
+              </div>
+
+              <div className="text-xs text-gray-400 mt-1">
+                Tests passing
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+              <div className="text-2xl font-bold text-white">
+                87.03%
+              </div>
+
+              <div className="text-xs text-gray-400 mt-1">
+                Test coverage
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+              <div className="text-2xl font-bold text-white">
+                ≤2
+              </div>
+
+              <div className="text-xs text-gray-400 mt-1">
+                SELECTs / task list
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
+              <div className="text-2xl font-bold text-white">
+                20/min
+              </div>
+
+              <div className="text-xs text-gray-400 mt-1">
+                Requests / IP
+              </div>
+            </div>
+
+          </div>
+
+          {/* UPDATED TASKPULSE PERFORMANCE */}
+          <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
+
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm font-semibold text-gray-200">
+                Local API benchmark
+              </span>
+
+              <span className="text-xs text-gray-500">
+                100 sequential requests
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+
+              <div>
+                <div className="text-xs text-gray-500 mb-1">
+                  GET /health · P95
+                </div>
+
+                <div className="text-xl font-bold text-blue-400">
+                  1.56 ms
+                </div>
+              </div>
+
+              <div>
+                <div className="text-xs text-gray-500 mb-1">
+                  GET /tasks/ · P95
+                </div>
+
+                <div className="text-xl font-bold text-purple-400">
+                  4.93 ms
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* UPDATED TASKPULSE TECHNOLOGIES */}
           <div className="flex flex-wrap gap-2 pt-4">
-            {['Python', 'FastAPI', 'MySQL', 'JavaScript', 'Tailwind CSS'].map((tech) => (
-              <span key={tech} className="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-xl font-medium text-gray-300">{tech}</span>
+
+            {[
+              'Python',
+              'FastAPI',
+              'PostgreSQL',
+              'SQLAlchemy',
+              'Redis',
+              'Celery',
+              'Docker',
+              'Pytest',
+              'Alembic',
+              'GitHub Actions',
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-xl font-medium text-gray-300"
+              >
+                {tech}
+              </span>
             ))}
+
           </div>
 
           <div className="pt-4 relative z-10">
@@ -60,25 +217,36 @@ export default function Projects() {
               <ExternalLink size={16} />
             </a>
           </div>
+
         </div>
 
         <div className="w-full lg:w-[45%] h-64 sm:h-80 lg:h-96 rounded-2xl bg-gradient-to-tr from-purple-900/30 to-blue-900/30 border border-white/5 flex flex-col justify-center items-center p-6 text-center">
+
           <Layers className="text-blue-400/60 mb-4" size={48} />
-          <h4 className="text-lg font-bold">taskpulse-f5zy.onrender.com</h4>
+
+          <h4 className="text-lg font-bold">
+            taskpulse-f5zy.onrender.com
+          </h4>
+
         </div>
+
       </div>
 
       {/* Sm1le-Fitnes Project Card */}
       <div className="bg-black/60 border border-white/10 rounded-[32px] p-8 md:p-12 flex flex-col lg:flex-row gap-8 items-center backdrop-blur-2xl hover:-translate-y-2 hover:border-emerald-500/30 hover:shadow-[0_0_80px_rgba(16,185,129,0.2)] transition-all duration-500 group relative overflow-hidden cursor-default mt-8">
-        
+
         <div className="absolute -right-20 -bottom-20 w-60 h-60 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-emerald-500/20 transition-all duration-500" />
 
         <div className="flex-1 space-y-6 relative z-10">
+
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl">
               <Layers size={22} />
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400">Fitness SaaS Backend</span>
+
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400">
+              Fitness SaaS Backend
+            </span>
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:to-teal-500 transition-all duration-300">
@@ -94,13 +262,13 @@ export default function Projects() {
               <ShieldCheck className="text-emerald-400 mt-0.5 shrink-0" size={18} />
               <p className="text-sm text-gray-300">Secure user data management</p>
             </div>
+
             <div className="flex items-start space-x-3">
               <Cpu className="text-emerald-400 mt-0.5 shrink-0" size={18} />
               <p className="text-sm text-gray-300">Personalized recommendation algorithms</p>
             </div>
           </div>
 
-          {/* Обновленный список технологий */}
           <div className="flex flex-wrap gap-2 pt-4">
             {['Python', 'PostgreSQL', 'FastAPI', 'JS', 'CSS', 'MHTML', 'Render'].map((tech) => (
               <span key={tech} className="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-xl font-medium text-gray-300 group-hover:border-emerald-500/40 transition-colors">
@@ -115,12 +283,19 @@ export default function Projects() {
               <ExternalLink size={16} />
             </a>
           </div>
+
         </div>
 
         <div className="w-full lg:w-[45%] h-64 sm:h-80 lg:h-96 rounded-2xl bg-gradient-to-tr from-emerald-900/20 to-teal-900/20 border border-white/5 flex flex-col justify-center items-center p-6 text-center">
+
           <Terminal className="text-emerald-400/60 mb-4 animate-pulse" size={48} />
-          <h4 className="text-lg font-bold">sm1le-fitnes-website.onrender.com</h4>
+
+          <h4 className="text-lg font-bold">
+            sm1le-fitnes-website.onrender.com
+          </h4>
+
         </div>
+
       </div>
 
     </section>
