@@ -148,7 +148,7 @@ export default function Home() {
           {[
             { label: 'Location', val: 'Chomutov, Czechia', icon: <MapPin size={24} />, link: '#' },
             { label: 'Email', val: 'alabushev.vladislav@gmail.com', icon: <Mail size={24} />, link: 'mailto:alabushev.vladislav@gmail.com' },
-            { label: 'Phone', val: '+420 723 542 205', icon: <Phone size={24} />, link: 'tel:+420720542205' },
+            { label: 'Phone', val: '+420 604 322 639', icon: <Phone size={24} />, link: 'tel:+420604322639' },
             {
               label: 'GitHub',
               val: 'sm1le-devops',
