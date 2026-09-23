@@ -232,7 +232,7 @@ export default function Projects() {
 
       </div>
 
-      {/* Sm1le-Fitnes Project Card */}
+      {/* Sm1le-Fitness Project Card */}
       <div className="bg-black/60 border border-white/10 rounded-[32px] p-8 md:p-12 flex flex-col lg:flex-row gap-8 items-center backdrop-blur-2xl hover:-translate-y-2 hover:border-orange-500/30 hover:shadow-[0_0_80px_rgba(249,115,22,0.25)] transition-all duration-500 group relative overflow-hidden cursor-default mt-8">
 
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-transparent to-amber-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none" />
@@ -252,15 +252,13 @@ export default function Projects() {
           </div>
 
           <h3 className="text-3xl font-extrabold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-amber-400 transition-all duration-300">
-            Sm1le-Fitnes
+            Sm1le-Fitness
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            Production-oriented fitness SaaS built with FastAPI, PostgreSQL and
-            Redis. Includes secure session authentication, CSRF protection,
-            email verification and password recovery, Stripe payments,
-            personalized training and nutrition plan generation, PDF exports,
-            rate limiting and production database migrations.
+            Fitness SaaS built with FastAPI, PostgreSQL and Redis. Implemented
+            secure account flows, Stripe payments, personalized training and
+            nutrition plans, PDF exports, automated testing and production CI/CD.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -291,7 +289,7 @@ export default function Projects() {
                 size={18}
               />
               <p className="text-sm text-gray-300">
-                Personalized training and nutrition plans with PDF export
+                Stripe payments, personalized plans & PDF exports
               </p>
             </div>
 
@@ -301,7 +299,7 @@ export default function Projects() {
                 size={18}
               />
               <p className="text-sm text-gray-300">
-                128 tests · CI/CD · dependency audit · production smoke checks
+                128 tests · 7/7 CI gates · production smoke verification
               </p>
             </div>
 
@@ -329,19 +327,19 @@ export default function Projects() {
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
               <div className="text-2xl font-bold text-white">
-                0
+                200
               </div>
               <div className="text-xs text-gray-400 mt-1">
-                Known vulnerabilities
+                VUs within SLO
               </div>
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
               <div className="text-2xl font-bold text-white">
-                2/2
+                0%
               </div>
               <div className="text-xs text-gray-400 mt-1">
-                Readiness dependencies
+                Request failures
               </div>
             </div>
 
@@ -349,13 +347,13 @@ export default function Projects() {
 
           <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
 
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-4">
               <span className="text-sm font-semibold text-gray-200">
-                Production pipeline
+                k6 capacity validation
               </span>
 
               <span className="text-xs text-gray-500">
-                GitHub Actions → Render
+                3 × 60s · PostgreSQL + Redis readiness path
               </span>
             </div>
 
@@ -363,24 +361,28 @@ export default function Projects() {
 
               <div>
                 <div className="text-xs text-gray-500 mb-1">
-                  Readiness
+                  P95 @ 200 VUs
                 </div>
 
                 <div className="text-xl font-bold text-orange-400">
-                  DB + Redis
+                  ~478 ms
                 </div>
               </div>
 
               <div>
                 <div className="text-xs text-gray-500 mb-1">
-                  Deployment verification
+                  Avg. throughput
                 </div>
 
                 <div className="text-xl font-bold text-amber-400">
-                  Exact SHA
+                  ~547 req/s
                 </div>
               </div>
 
+            </div>
+
+            <div className="text-xs text-gray-500 mt-4">
+              98,752 requests · 0% failures · SLO: P95 &lt; 500 ms, failures &lt; 1%
             </div>
 
           </div>
@@ -397,6 +399,7 @@ export default function Projects() {
               'Resend',
               'Docker',
               'Pytest',
+              'k6',
               'GitHub Actions',
               'Render',
             ].map((tech) => (
